@@ -22,5 +22,9 @@ Route::get('/', [ListingContorller::class,'index']);
 
 Route::get('/listings/create', [ListingContorller::class,'create']);
 
+// Store Listing
+Route::post('/listings', [ListingContorller::class,'store']);
+
+
 // Single Listing
 Route::get('/listings/{listing}', [ListingContorller::class,'show']);
